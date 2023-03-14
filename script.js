@@ -4,7 +4,7 @@ const colorMode = "colorMode"
 
 
 window.addEventListener("load", () => {
-    modeToggle.innerHTML = localStorage.getItem(colorMode) || "light_mode";
+    modeToggle.innerHTML = localStorage.getItem(colorMode) || "dark_mode";
     if (modeToggle.innerHTML === "light_mode") {
         // dark mode settings
         document.documentElement.style.setProperty("--background-color", "#000")
